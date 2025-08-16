@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextView" parent="Widget.MaterialComponents.TextView" >
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="fontFamily">@font/regular_font</item>
+        <item name="android:fontFamily">@font/regular_font</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="fontFamily">@font/bold_font</item>
+        <item name="android:fontFamily">@font/bold_font</item>
+    </style>
+
+    <style name="TextView.ExtraBold">
+        <item name="fontFamily">@font/bold_font</item>
+        <item name="android:fontFamily">@font/bold_font</item>
+    </style>
+</resources>
