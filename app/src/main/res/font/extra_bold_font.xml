@@ -7,11 +7,9 @@
         android:font="@font/sf_pro_display_bold"
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:textFontWeight="700"
         app:font="@font/sf_pro_display_bold"
         app:fontStyle="normal"
         app:fontWeight="700"
-        app:textFontWeight="700"
         tools:targetApi="p" />
 
 </font-family>
