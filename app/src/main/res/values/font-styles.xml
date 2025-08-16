@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextView" parent="Widget.MaterialComponents.TextView" >
+    <style name="TextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:enabled">true</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="TextView.Regular">
@@ -17,5 +18,29 @@
     <style name="TextView.ExtraBold">
         <item name="fontFamily">@font/bold_font</item>
         <item name="android:fontFamily">@font/bold_font</item>
+    </style>
+
+    <style name="TextView.Regular.10">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Regular.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Bold.10">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Bold.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.ExtraBold.10">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.ExtraBold.12">
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>
