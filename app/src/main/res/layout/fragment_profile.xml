@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/TextView.ExtraBold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            app:drawableEndCompat="@drawable/ic_verified"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="codefive" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_gradient_circle_stroke"
+            android:padding="2dp"
+            android:src="@drawable/ic_avatar_big"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_username"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_user_post_total"
+            style="@style/TextView.ExtraBold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toTopOf="@id/tv_user_post_label"
+            app:layout_constraintEnd_toStartOf="@id/tv_user_follower_total"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintTop_toTopOf="@id/iv_profile"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="6956" />
+
+        <TextView
+            android:id="@+id/tv_user_post_label"
+            style="@style/TextView.Bold.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/profile_post_label"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="@id/iv_profile"
+            app:layout_constraintEnd_toEndOf="@id/tv_user_post_total"
+            app:layout_constraintStart_toStartOf="@id/tv_user_post_total"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_post_total" />
+
+        <TextView
+            android:id="@+id/tv_user_follower_total"
+            style="@style/TextView.ExtraBold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toTopOf="@id/tv_user_following_label"
+            app:layout_constraintEnd_toStartOf="@+id/tv_user_following_total"
+            app:layout_constraintStart_toEndOf="@id/tv_user_post_label"
+            tools:text="27,7m" />
+
+        <TextView
+            android:id="@+id/tv_user_follower_label"
+            style="@style/TextView.Bold.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/profile_follower_label"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_user_post_label"
+            app:layout_constraintEnd_toEndOf="@id/tv_user_follower_total"
+            app:layout_constraintStart_toStartOf="@id/tv_user_follower_total"
+            app:layout_constraintTop_toTopOf="@id/tv_user_post_label" />
+
+        <TextView
+            android:id="@+id/tv_user_following_total"
+            style="@style/TextView.ExtraBold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toTopOf="@id/tv_user_following_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_user_follower_total"
+            tools:text="219" />
+
+        <TextView
+            android:id="@+id/tv_user_following_label"
+            style="@style/TextView.Bold.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/profile_following_label"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_user_post_label"
+            app:layout_constraintEnd_toEndOf="@id/tv_user_following_total"
+            app:layout_constraintStart_toStartOf="@id/tv_user_following_total"
+            app:layout_constraintTop_toTopOf="@id/tv_user_post_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

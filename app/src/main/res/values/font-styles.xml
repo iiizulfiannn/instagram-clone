@@ -16,8 +16,8 @@
     </style>
 
     <style name="TextView.ExtraBold">
-        <item name="fontFamily">@font/bold_font</item>
-        <item name="android:fontFamily">@font/bold_font</item>
+        <item name="fontFamily">@font/extra_bold_font</item>
+        <item name="android:fontFamily">@font/extra_bold_font</item>
     </style>
 
     <style name="TextView.Regular.10">
@@ -42,5 +42,9 @@
 
     <style name="TextView.ExtraBold.12">
         <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.ExtraBold.14">
+        <item name="android:textSize">14sp</item>
     </style>
 </resources>
