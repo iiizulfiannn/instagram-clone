@@ -108,4 +108,58 @@
         app:layout_constraintTop_toBottomOf="@id/iv_content"
         tools:ignore="ContentDescription" />
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_liked_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_like">
+
+        <TextView
+            style="@style/TextView.Regular.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_liked_by"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_liked_list"
+            style="@style/TextView.Bold.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            tools:text="Gabdu et d’autres personnes" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_user_post"
+        style="@style/TextView.Regular.12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ll_liked_list"
+        tools:text="ArthurHazan Lorem Ipsum #Proud" />
+
+    <TextView
+        android:id="@+id/tv_user_comments"
+        style="@style/TextView.Regular.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="6dp"
+        android:alpha="0.4"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/home_see_all_comments"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_post" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

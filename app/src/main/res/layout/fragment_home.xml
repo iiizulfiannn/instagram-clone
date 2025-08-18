@@ -44,6 +44,7 @@
             tools:ignore="ContentDescription" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home_story"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -53,6 +54,17 @@
             tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/cell_home_story"
             tools:orientation="horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/rv_home_story"
+            tools:itemCount="3"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/cell_home_post"
+            tools:orientation="vertical" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
