@@ -111,6 +111,55 @@
             app:layout_constraintStart_toStartOf="@id/tv_user_following_total"
             app:layout_constraintTop_toTopOf="@id/tv_user_post_label" />
 
+        <TextView
+            android:id="@+id/tv_profile_username"
+            style="@style/TextView.ExtraBold.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile"
+            tools:text="codefive" />
+
+        <TextView
+            android:id="@+id/tv_profile_description"
+            style="@style/TextView.Bold.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_username"
+            tools:text="Designer" />
+
+        <TextView
+            android:id="@+id/tv_profile_biography"
+            style="@style/TextView.Regular.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_description"
+            tools:text="Lorem Ipsum 💻" />
+
+        <TextView
+            android:id="@+id/tv_profile_link"
+            style="@style/TextView.Regular.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_hyperlink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_biography"
+            tools:text="codefive.pt" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
