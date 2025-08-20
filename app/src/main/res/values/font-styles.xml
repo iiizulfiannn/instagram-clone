@@ -21,7 +21,7 @@
     </style>
 
     <style name="TextView.Regular.10">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">10sp</item>
     </style>
 
     <style name="TextView.Regular.12">
@@ -29,7 +29,7 @@
     </style>
 
     <style name="TextView.Bold.10">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">10sp</item>
     </style>
 
     <style name="TextView.Bold.12">
@@ -37,7 +37,7 @@
     </style>
 
     <style name="TextView.ExtraBold.10">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">10sp</item>
     </style>
 
     <style name="TextView.ExtraBold.12">
