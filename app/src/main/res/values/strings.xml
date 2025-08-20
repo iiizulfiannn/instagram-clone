@@ -8,4 +8,5 @@
     <string name="profile_email_label">Email</string>
     <string name="home_liked_by">Liked by</string>
     <string name="home_see_all_comments">View all %1$s comments</string>
+    <string name="home_live_label">LIVE</string>
 </resources>

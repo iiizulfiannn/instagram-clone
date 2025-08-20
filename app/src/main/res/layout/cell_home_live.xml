@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp">
+
+    <ImageView
+        android:id="@+id/iv_home_live"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/secondary_gradient_circle_stroke"
+        android:padding="2dp"
+        android:src="@drawable/ic_avatar_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        style="@style/TextView.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_rectangle_live"
+        android:text="@string/home_live_label"
+        android:textSize="7sp"
+        android:padding="4dp"
+        android:layout_marginTop="-15dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_home_live" />
+
+    <TextView
+        android:id="@+id/tv_home_live_name"
+        style="@style/TextView.ExtraBold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_home_live"
+        tools:text="Design Tips" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
