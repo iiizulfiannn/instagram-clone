@@ -35,5 +35,4 @@ class HomeStoryAdapter(
         val addStoryIcon: ImageView = itemView.findViewById(R.id.iv_add_story)
         val nameTextView: TextView = itemView.findViewById(R.id.tv_home_story_name)
     }
-
 }
