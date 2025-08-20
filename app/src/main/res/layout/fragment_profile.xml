@@ -22,7 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="codefive" />
+            android:text="codefive" />
 
         <ImageView
             android:id="@+id/iv_profile"
@@ -32,7 +32,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/main_gradient_circle_stroke"
             android:padding="2dp"
-            tools:src="@drawable/ic_avatar_big"
+            android:src="@drawable/ic_avatar_big"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_username"
             tools:ignore="ContentDescription" />
@@ -48,7 +48,7 @@
             app:layout_constraintStart_toEndOf="@id/iv_profile"
             app:layout_constraintTop_toTopOf="@id/iv_profile"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="6956" />
+            android:text="6956" />
 
         <TextView
             android:id="@+id/tv_user_post_label"
@@ -72,7 +72,7 @@
             app:layout_constraintBottom_toTopOf="@id/tv_user_following_label"
             app:layout_constraintEnd_toStartOf="@+id/tv_user_following_total"
             app:layout_constraintStart_toEndOf="@id/tv_user_post_label"
-            tools:text="27,7m" />
+            android:text="27,7m" />
 
         <TextView
             android:id="@+id/tv_user_follower_label"
@@ -96,7 +96,7 @@
             app:layout_constraintBottom_toTopOf="@id/tv_user_following_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_user_follower_total"
-            tools:text="219" />
+            android:text="219" />
 
         <TextView
             android:id="@+id/tv_user_following_label"
@@ -121,7 +121,7 @@
             android:textColor="@color/text_primary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_profile"
-            tools:text="codefive" />
+            android:text="codefive" />
 
         <TextView
             android:id="@+id/tv_profile_description"
@@ -133,7 +133,7 @@
             android:textColor="@color/text_secondary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_profile_username"
-            tools:text="Designer" />
+            android:text="Designer" />
 
         <TextView
             android:id="@+id/tv_profile_biography"
@@ -145,7 +145,7 @@
             android:textColor="@color/text_primary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_profile_description"
-            tools:text="Lorem Ipsum 💻" />
+            android:text="Lorem Ipsum 💻" />
 
         <TextView
             android:id="@+id/tv_profile_link"
@@ -157,7 +157,7 @@
             android:textColor="@color/text_hyperlink"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_profile_biography"
-            tools:text="codefive.pt" />
+            android:text="codefive.pt" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_profile_follow"
