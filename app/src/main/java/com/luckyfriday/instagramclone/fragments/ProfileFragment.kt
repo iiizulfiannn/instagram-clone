@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.tabs.TabLayout
 import com.luckyfriday.instagramclone.R
 import com.luckyfriday.instagramclone.adapters.ProfileCollectionAdapter
 import com.luckyfriday.instagramclone.adapters.ProfileHighlightAdapter
@@ -41,6 +42,23 @@ class ProfileFragment : Fragment() {
         profileRecyclerView.layoutManager = GridLayoutManager(activity, 3)
         val profileAdapter = ProfileCollectionAdapter(getProfileCollectionList())
         profileRecyclerView.adapter = profileAdapter
+
+        val tabLayout: TabLayout = view.findViewById(R.id.tab_profile)
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_profile_frame))
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_video_playback))
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_contact))
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(p0: TabLayout.Tab?) {
+                if (tabLayout.selectedTabPosition == 0) {
+                    profileAdapter.addAll(getProfileCollectionList())
+                } else profileAdapter.clear()
+            }
+
+            override fun onTabUnselected(p0: TabLayout.Tab?) = Unit
+
+            override fun onTabReselected(p0: TabLayout.Tab?) = Unit
+
+        })
 
     }
 
