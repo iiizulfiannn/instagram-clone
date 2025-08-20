@@ -1,6 +1,5 @@
 package com.luckyfriday.instagramclone.adapters
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.luckyfriday.instagramclone.R
 import com.luckyfriday.instagramclone.models.HomePostModel
-import com.luckyfriday.instagramclone.models.HomeStoryModel
 
 class HomePostAdapter(
     private val list: List<HomePostModel>
