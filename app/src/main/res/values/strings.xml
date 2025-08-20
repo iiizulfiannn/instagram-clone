@@ -5,4 +5,7 @@
     <string name="profile_post_label">Posts</string>
     <string name="profile_following_label">Following</string>
     <string name="profile_follower_label">Follower</string>
+    <string name="profile_follow_label">Follow</string>
+    <string name="profile_message_label">Message</string>
+    <string name="profile_email_label">Email</string>
 </resources>

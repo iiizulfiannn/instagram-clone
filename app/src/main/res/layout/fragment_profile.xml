@@ -159,6 +159,59 @@
             app:layout_constraintTop_toBottomOf="@id/tv_profile_biography"
             tools:text="codefive.pt" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_profile_follow"
+            style="@style/Primary.Button.Blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:minHeight="28dp"
+            android:text="@string/profile_follow_label"
+            app:layout_constraintEnd_toStartOf="@id/btn_profile_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_link" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_profile_message"
+            style="@style/Primary.Button.Grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:minHeight="28dp"
+            android:text="@string/profile_message_label"
+            app:layout_constraintEnd_toStartOf="@id/btn_profile_email"
+            app:layout_constraintStart_toEndOf="@id/btn_profile_follow"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_link" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_profile_email"
+            style="@style/Primary.Button.Grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:minHeight="28dp"
+            android:text="@string/profile_email_label"
+            app:layout_constraintEnd_toStartOf="@id/iv_profile_add_person"
+            app:layout_constraintStart_toEndOf="@id/btn_profile_message"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_link" />
+
+        <ImageView
+            android:id="@+id/iv_profile_add_person"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_grey_rounded_6"
+            android:padding="8dp"
+            android:src="@drawable/ic_add_person"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_link"
+            tools:ignore="ContentDescription" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

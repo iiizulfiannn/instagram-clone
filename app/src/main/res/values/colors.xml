@@ -6,4 +6,6 @@
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#9A9A9A</color>
     <color name="text_hyperlink">#1B538C</color>
+    <color name="bg_blue">#3597F0</color>
+    <color name="bg_grey">#EFEFEF</color>
 </resources>

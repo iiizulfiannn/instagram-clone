@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Primary.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextView.Bold.12</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <iten name="android:elevation">0dp</iten>
+        <item name="cornerRadius">6dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Primary.Button.Blue">
+        <item name="backgroundTint">@color/bg_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Primary.Button.Grey">
+        <item name="backgroundTint">@color/bg_grey</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>
