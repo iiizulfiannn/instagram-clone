@@ -212,6 +212,18 @@
             app:layout_constraintTop_toBottomOf="@id/tv_profile_link"
             tools:ignore="ContentDescription" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_profile_highlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_profile_follow"
+            tools:itemCount="10"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/cell_profile_highlight"
+            tools:orientation="horizontal" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

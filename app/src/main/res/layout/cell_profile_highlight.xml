@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="7dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_profile_highlight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_avatar_big" />
+
+    <TextView
+        android:id="@+id/tv_profile_highlight_name"
+        style="@style/TextView.Regular.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        tools:text="Design Tips" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
