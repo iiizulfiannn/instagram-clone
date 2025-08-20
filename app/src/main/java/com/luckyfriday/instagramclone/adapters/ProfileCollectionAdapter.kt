@@ -9,7 +9,7 @@ import com.luckyfriday.instagramclone.models.ProfileCollectionModel
 import com.luckyfriday.instagramclone.R
 
 class ProfileCollectionAdapter(
-    private val list: List<ProfileCollectionModel>
+    private val list: ArrayList<ProfileCollectionModel>
 ) : RecyclerView.Adapter<ProfileCollectionAdapter.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -25,6 +25,18 @@ class ProfileCollectionAdapter(
     }
 
     override fun getItemCount(): Int = list.size
+
+    fun clear() {
+        val lastItemCount = list.size
+        list.clear()
+        notifyItemRangeRemoved(0, lastItemCount)
+    }
+
+    fun addAll(items: ArrayList<ProfileCollectionModel>) {
+        clear()
+        list.addAll(items)
+        notifyItemRangeInserted(0, itemCount)
+    }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val imageView : ImageView = itemView.findViewById(R.id.iv_profile_collection)
